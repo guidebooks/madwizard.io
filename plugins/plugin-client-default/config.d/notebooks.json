@@ -1,0 +1,11 @@
+{
+  "label": "Notebooks",
+  "submenu": [
+    { "label": "Client Demos", "submenu": [
+      { "notebook": "Hello", "filepath": "/kui/client/hello.md", "open": true }
+    ]},
+    { "label": "Kui", "submenu": [
+      {"notebook": "Kui Stock Welcome", "filepath": "/kui/welcome.md" }
+    ]}
+  ]
+}

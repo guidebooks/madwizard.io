@@ -1,0 +1,8 @@
+{
+  "contextRoot": "./",
+  "offline": true,
+  "readonly": false,
+  "executable": false,
+  "singletonGuidebooks": true,
+  "showGuidebooksSidebar": true
+}
