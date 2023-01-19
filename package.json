@@ -13,6 +13,9 @@
     "watch:browser": "KUI_HEADLESS_WEBPACK=true npm run _watch $WATCH_ARGS",
     "watch:test": "RUNNING_KUI_TEST=true npm run watch:browser",
     "watch": "concurrently -n WEBPACK,TYPESCRIPT --kill-others 'npm run watch:browser' 'npm run watch:source'",
+    "format": "prettier --write '**/*.{scss,css,html,js,json,md,ts,tsx}'",
+    "lint": "eslint . --ext '**/*.{js,ts,tsx}'",
+    "prepare": "husky install",
     "postinstall": "npm run compile",
     "test": "playwright test",
     "start": "WATCH_ARGS='-open' npm run watch"
@@ -20,14 +23,56 @@
   "keywords": [],
   "author": "@starpit",
   "license": "Apache-2.0",
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "rules": {
+      "@typescript-eslint/no-unused-vars": "error"
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  },
+  "eslintIgnore": [
+    "mdist",
+    "dist",
+    ".#*",
+    "*~"
+  ],
+  "lint-staged": {
+    "**/*.{scss,css,html,js,json,md,ts,tsx}": [
+      "prettier --write",
+      "git add"
+    ],
+    "**/*.{js,ts,tsx}": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 120
+  },
   "devDependencies": {
     "@kui-shell/builder": "13.0.0-dev-20230119-135348",
     "@kui-shell/react": "13.0.0-dev-20230119-135348",
     "@kui-shell/webpack": "13.0.0-dev-20230119-135348",
     "@playwright/test": "^1.29.2",
-    "@types/node": "^18.11.18",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.46.1",
+    "@typescript-eslint/parser": "^5.46.1",
+    "eslint": "^8.30.0",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
     "concurrently": "^7.6.0",
     "typescript": "^4.9.4"
   },
