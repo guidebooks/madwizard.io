@@ -72,3 +72,6 @@ report.*.json
 
 # packages/builder/dist/electron currently generates this and does not remove it
 /kubectl-kui
+/test-results/
+/playwright-report/
+/playwright/.cache/
