@@ -1,1 +1,4 @@
-../../plugin-client-default/config.d/name.json
+{
+  "productName": "madwizard",
+  "productTitle": "madwizard"
+}

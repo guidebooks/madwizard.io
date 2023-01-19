@@ -1,1 +1,11 @@
-../../plugin-client-default/config.d/icons.json
+{
+  "app": "icons/png/madwizard.png",
+  "large": "icons/svg/kui.svg",
+  "wide": "icons/svg/kui-wide.svg",
+  "favicon": "icons/ico/madwizard.ico",
+  "filesystem": {
+    "darwin": "icons/icns/kui.icns",
+    "win32": "icons/ico/madwizard.ico",
+    "linux": "icons/png/madwizard.png"
+  }
+}

@@ -1,1 +1,7 @@
-../../plugin-client-default/config.d/notebooks.json
+{
+  "label": "Playgrounds",
+  "submenu": [
+    { "notebook": "Automatic Wizards Playground", "filepath": "/kui/madwizard/playground/playground.md" },
+    { "notebook": "Markdown Playground", "filepath": "/kui/playground.md" }
+  ]
+}
