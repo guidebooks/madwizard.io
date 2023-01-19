@@ -14,13 +14,21 @@
  * limitations under the License.
  */
 
-import React from 'react'
+import React from "react"
 
-import { Kui, KuiProps, ContextWidgets, Icons, MadeWithKui, MeterWidgets, SpaceFiller } from '@kui-shell/plugin-client-common'
+import {
+  Kui,
+  KuiProps,
+  ContextWidgets,
+  Icons,
+  MadeWithKui,
+  MeterWidgets,
+  SpaceFiller,
+} from "@kui-shell/plugin-client-common"
 
-import autoplay from '@kui-shell/client/config.d/autoplay.json'
-import { homepage, version } from '@kui-shell/client/package.json'
-import { productName } from '@kui-shell/client/config.d/name.json'
+import autoplay from "@kui-shell/client/config.d/autoplay.json"
+import { homepage, version } from "@kui-shell/client/package.json"
+import { productName } from "@kui-shell/client/config.d/name.json"
 
 function GithubIcon() {
   return (
@@ -46,14 +54,8 @@ export default function renderMain(props: KuiProps) {
       productName={productName}
       lightweightTables
       {...props}
-      commandLine={
-        props.commandLine || autoplay.length === 0 ? [] : [
-          'replay',
-          '-r',
-          ...autoplay
-        ]
-      }
-      >
+      commandLine={props.commandLine || autoplay.length === 0 ? [] : ["replay", "-r", ...autoplay]}
+    >
       <ContextWidgets>
         <GithubIcon />
       </ContextWidgets>
