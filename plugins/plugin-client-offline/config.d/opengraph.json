@@ -1,11 +1,10 @@
 {
-  "ogSiteName": "Kui",
-  "ogTitle": "Kui: The CLI with a GUI twist",
-  "ogUrl": "http://kui.tools",
-  "ogDescription": "Kui is a platform for enhancing the terminal experience with visualizations. It provides users a modern alternative to ASCII terminals and web-based consoles. It provides tool developers an opportunity to unify these experiences.",
-  "ogImage": "https://raw.githubusercontent.com/IBM/kui/master/docs/readme/images/kui-experience.gif",
-  "ogLabel1": "Clone on GitHub",
-  "ogData1": "https://github.com/IBM/kui",
-  "ogLabel2": "Download Now",
-  "ogData2": "https://github.com/IBM/kui/releases"
+  "ogSiteName": "madwizard",
+  "ogTitle": "Automatically generate Wizards from Markdown",
+  "ogUrl": "http://madwizard.io",
+  "ogDescription": "madwizard can generate wizards automatically, from markdown source. Your users may consume the wizards either with a CLI-based tool (npm install madwizard-cli), with an Electron-based graphical client, or with a browser-based one.",
+  "ogLabel1": "Use the NPM",
+  "ogData1": "https://www.npmjs.com/package/madwizard",
+  "ogLabel2": "Custom web page",
+  "ogData2": "https://github.com/guidebooks/madwizard.io"
 }
