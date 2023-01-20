@@ -57,14 +57,14 @@ export default function renderMain(props: KuiProps) {
       commandLine={props.commandLine || autoplay.length === 0 ? [] : ["replay", "-r", ...autoplay]}
     >
       <ContextWidgets>
+        {/* widgets you want to appear flush left */}
         <GithubIcon />
+        <MadeWithKui />
       </ContextWidgets>
 
       <SpaceFiller />
 
-      <MeterWidgets>
-        <MadeWithKui />
-      </MeterWidgets>
+      <MeterWidgets>{/* widgets you want to appear flush right */}</MeterWidgets>
     </Kui>
   )
 }
