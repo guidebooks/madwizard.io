@@ -1,26 +1,26 @@
 {
   "name": "madwizard.io web site",
   "version": "0.0.1",
-  "description": "",
-  "main": "dist/headless/kui.min.js",
+  "description": "This project uses Kui to create a static single page web application.",
   "scripts": {
     "watch:source": "tsc --build tsconfig.json --watch",
     "compile": "npx tsc --build . && npx kui-babel && npx kui-prescan",
     "compile:clean": "tsc --build tsconfig.json --clean",
     "build": "kui-build-webpack",
     "kill": "kill $(lsof -t -i:908${PORT_OFFSET-0}) > /dev/null 2> /dev/null || true",
-    "_watch": "bash -c \"npm run kill; export CSP_ALLOWED_HOSTS='http: https: data: filesystem: about: blob: ws: wss:'; kui-watch-webpack\"",
-    "watch:browser": "KUI_HEADLESS_WEBPACK=true npm run _watch $WATCH_ARGS",
+    "watch:browser": "npm run kill; export CSP_ALLOWED_HOSTS='http: https: data: filesystem: about: blob: ws: wss:'; KUI_HEADLESS_WEBPACK=true kui-watch-webpack $WATCH_ARGS",
     "watch:test": "RUNNING_KUI_TEST=true npm run watch:browser",
     "watch": "concurrently -n WEBPACK,TYPESCRIPT --kill-others 'npm run watch:browser' 'npm run watch:source'",
     "format": "prettier --write '**/*.{scss,css,html,js,json,md,ts,tsx}'",
     "lint": "eslint . --ext '**/*.{js,ts,tsx}'",
     "prepare": "husky install",
     "postinstall": "npm run compile",
-    "test": "playwright test",
-    "start": "WATCH_ARGS='-open' npm run watch"
+    "test": "playwright test"
   },
-  "keywords": [],
+  "keywords": [
+    "kui",
+    "webpage"
+  ],
   "author": "@starpit",
   "license": "Apache-2.0",
   "eslintConfig": {
