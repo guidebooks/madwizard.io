@@ -62,3 +62,7 @@ your production builds in the following ways:
    Beware that the latter two may make less sense (in their current
    form) in an offline static-single-page web application. Hopefully
    they can provide at least some inspiration.
+
+5. Custom info to be displayed when pasting your URL in Slack,
+   Twitter, etc. [OpenGraph
+   config](plugins/plugin-client-offline/config.d/opengraph.json).
