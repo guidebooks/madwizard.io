@@ -20,28 +20,15 @@ import {
   Kui,
   KuiProps,
   ContextWidgets,
-  Icons,
+  GitHubIcon,
   MadeWithKui,
   MeterWidgets,
   SpaceFiller,
 } from "@kui-shell/plugin-client-common"
 
+import { version } from "@kui-shell/client/package.json"
 import autoplay from "@kui-shell/client/config.d/autoplay.json"
-import { homepage, version } from "@kui-shell/client/package.json"
 import { productName } from "@kui-shell/client/config.d/name.json"
-
-function GithubIcon() {
-  return (
-    <a
-      target="#"
-      title="Visit our Github Page"
-      href={homepage}
-      className="kui--status-stripe-element-clickable kui--status-stripe-element"
-    >
-      <Icons icon="Github" className="somewhat-larger-text" />
-    </a>
-  )
-}
 
 /**
  * Offline client definition
@@ -58,7 +45,7 @@ export default function renderMain(props: KuiProps) {
     >
       <ContextWidgets>
         {/* widgets you want to appear flush left */}
-        <GithubIcon />
+        <GitHubIcon />
         <MadeWithKui />
       </ContextWidgets>
 
