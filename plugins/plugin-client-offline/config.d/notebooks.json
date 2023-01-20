@@ -1,7 +1,13 @@
 {
-  "label": "Playgrounds",
+  "label": "madwizard",
   "submenu": [
-    { "notebook": "Automatic Wizards Playground", "filepath": "/kui/madwizard/playground/playground.md" },
-    { "notebook": "Markdown Playground", "filepath": "/kui/playground.md" }
+    { "notebook": "Welcome", "filepath": "/kui/client/what-is-a-guidebook.md" },
+    {
+      "label": "Playgrounds",
+      "submenu": [
+        { "notebook": "Craft a Wizard", "filepath": "/kui/client/playground.md" },
+        { "notebook": "Explore Markdown Features", "filepath": "/kui/playground.md" }
+      ]
+    }
   ]
 }
