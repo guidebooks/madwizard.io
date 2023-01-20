@@ -7,7 +7,7 @@
   "types": "mdist/index.d.ts",
   "license": "Apache-2.0",
   "author": "Mengting Yan",
-  "homepage": "https://madwizard.io",
+  "homepage": "https://github.com/guidebooks/madwizard.io",
   "bugs": {
     "url": "https://github.com/guidebooks/madwizard.io/issues/new"
   },
