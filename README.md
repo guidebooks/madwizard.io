@@ -1,6 +1,7 @@
 # Kui-based Static Web Site
 
-This repository houses the logic for [madwizard.io](https://madwizard.io).
+This repository houses the logic for the web site
+[https://madwizard.io](https://madwizard.io).
 
 It uses [Kui](https://github.com/kubernetes-sigs/kui) to display a set
 of wizards that are auto-generated from markdown, using
