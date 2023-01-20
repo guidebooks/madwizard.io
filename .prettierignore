@@ -5,3 +5,4 @@ package-lock.json
 dist
 playwright-report
 mdist
+plugins/*/notebooks
