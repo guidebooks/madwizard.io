@@ -10,17 +10,17 @@ layout:
 ---
 
 === "Choice"
-`bash
+    ```bash
     ---
     execute: now
     maximize: true
     outputOnly: true
     ---
     commentary --send guidebook-playground -f /kui/madwizard/playground/hello.md
-    `
+    ```
 
 === "Sequence of Choices"
-`bash
+    ```bash
     ---
     execute: now
     maximize: true
@@ -30,33 +30,33 @@ layout:
     `
 
 === "Multi-select"
-`bash
+    ```bash
     ---
     execute: now
     maximize: true
     outputOnly: true
     ---
     commentary --send guidebook-playground -f /kui/madwizard/playground/multi.md
-    `
+    ```
 
 === "Form"
-`bash
+    ```bash
     ---
     execute: now
     maximize: true
     outputOnly: true
     ---
     commentary --send guidebook-playground -f /kui/madwizard/playground/form.md
-    `
+    ```
 
 ---
 
 === "The Resulting Wizard"
-`bash
+    ```bash
     ---
     execute: now
     outputOnly: true
     maximize: true
     ---
     madwizard playground guidebook-playground
-    `
+    ```
