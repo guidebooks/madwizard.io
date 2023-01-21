@@ -46,7 +46,7 @@ export default function renderMain(props: KuiProps) {
       <ContextWidgets>
         {/* widgets you want to appear flush left */}
         <GitHubIcon />
-        <MadeWithKui />
+        <MadeWithKui position="top-start" />
       </ContextWidgets>
 
       <SpaceFiller />
