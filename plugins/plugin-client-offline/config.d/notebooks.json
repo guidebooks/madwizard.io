@@ -5,7 +5,7 @@
     {
       "label": "Playgrounds",
       "submenu": [
-        { "notebook": "Craft a Wizard", "filepath": "/kui/madwizard/playground/playground.md" },
+        { "notebook": "Craft a Wizard", "filepath": "/kui/client/playground.md" },
         { "notebook": "Explore Markdown Features", "filepath": "/kui/playground.md" }
       ]
     }
