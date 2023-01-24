@@ -30,6 +30,8 @@ import { version } from "@kui-shell/client/package.json"
 import autoplay from "@kui-shell/client/config.d/autoplay.json"
 import { productName } from "@kui-shell/client/config.d/name.json"
 
+import "../web/scss/components/Client/_index.scss"
+
 /**
  * Offline client definition
  */

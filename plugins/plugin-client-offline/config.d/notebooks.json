@@ -1,7 +1,7 @@
 {
   "label": "madwizard",
   "submenu": [
-    { "notebook": "Welcome", "filepath": "/kui/client/what-is-a-guidebook.md" },
+    { "notebook": "Welcome", "filepath": "/kui/client/welcome.md" },
     {
       "label": "Playgrounds",
       "submenu": [
