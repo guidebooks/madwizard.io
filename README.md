@@ -1,15 +1,18 @@
-# Kui-based Static Web Site
+# madwizard.io Web Site
 
 This repository houses the logic for the web site
-[https://madwizard.io](https://madwizard.io).
+[https://madwizard.io](https://madwizard.io). It showcases
+[`madwizard`](https://github.com/guidebooks/madwizard), which is a way
+to automate turning markdown source into a wizard user experience.
 
-It uses [Kui](https://github.com/kubernetes-sigs/kui) to display a set
-of wizards that are auto-generated from markdown, using
-[madwizard](https://github.com/guidebooks/madwizard).
+This repo uses the [Kui](https://github.com/kubernetes-sigs/kui)
+project to generate a static single page web app. Kui includes a
+plugin that visualizes the `madwizard` wizard experience.
 
-## Development
+## Using this repo as a template
 
-Start the watcher:
+You may use this repo as a starting point for crafting your own
+(similar) site. After cloning, start the watcher:
 
 ```shell
 npm run watch
@@ -19,7 +22,7 @@ then visit [http://localhost:9080](http://localhost:9080). We use
 [Playwright](https://playwright.dev/) for [tests](./tests). Run the
 tests via `npm test`.
 
-## Production Builds
+### Production Builds
 
 This repository uses a [GitHub Actions
 workflow](.github/workflows/deploy) to build the webpack bundles and
@@ -28,10 +31,9 @@ deploy them to a site managed by GitHub Pages.
 If you want to build the bundles manually, use `npm run build`, and
 look in `dist/webpack` for the index.html, etc.
 
-## Customization
+### Customizing your web app
 
-If you are using this as a template repo, welcome! You can customize
-your production builds in the following ways:
+You can customize your web app in the following ways:
 
 1. Custom list of guidebooks: [guidebook
    config](plugins/plugin-client-offline/config.d/notebooks.json); you
