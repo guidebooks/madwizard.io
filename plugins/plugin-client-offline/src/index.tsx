@@ -45,7 +45,9 @@ export default function renderMain(props: KuiProps) {
       {...props}
       quietExecCommand={false}
       loading={<div />}
-      commandLine={props.commandLine || autoplay.length === 0 ? [] : ["commentary", "--readonly", "-f", ...autoplay]}
+      commandLine={
+        props.commandLine || autoplay.length === 0 ? [] : ["commentary", "--simple", "--readonly", "-f", ...autoplay]
+      }
     >
       <ContextWidgets>
         {/* widgets you want to appear flush left */}
