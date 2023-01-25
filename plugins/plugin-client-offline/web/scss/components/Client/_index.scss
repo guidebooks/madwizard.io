@@ -19,3 +19,10 @@
 
 /** Tweak the markdown headings UI a bit */
 @import "headings";
+
+@import "@kui-shell/plugin-client-common/web/scss/components/Terminal/mixins";
+@include Scrollback {
+  @include ProcessingBlock {
+    display: none;
+  }
+}
