@@ -1,3 +1,5 @@
+## Using `madwizard`
+
 ### As a Library
 
 You can use the `madwizard` npm directly, and consume the wizard
@@ -7,7 +9,7 @@ graph model, optimizing this task graph, generating a wizard model
 from the task graph, and finally a collection of views over these
 models.
 
-### As an Engine for Executing Markdown
+### As a Markdown Execution Engine
 
 One of the included views is `guide`, which bundles parsing, compiling
 and optimizing, wizardifying, and then interprets the wizard. The
