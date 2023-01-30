@@ -1,4 +1,4 @@
-# Wizards from Markdown
+# madwizard: Automatic Wizards
 
 Welcome to [`madwizard`](https://github.com/guidebooks/madwizard), a
 tool that generates a **wizard UX** automatically from **markdown

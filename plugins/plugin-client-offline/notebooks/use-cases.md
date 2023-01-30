@@ -1,5 +1,3 @@
-## Using `madwizard`
-
 ### As a Library
 
 You can use the `madwizard` npm directly, and consume the wizard
