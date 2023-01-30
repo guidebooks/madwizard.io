@@ -8,7 +8,7 @@
     "compile:clean": "tsc --build tsconfig.json --clean",
     "build": "kui-build-webpack",
     "kill": "kill $(lsof -t -i:908${PORT_OFFSET-0}) > /dev/null 2> /dev/null || true",
-    "watch:browser": "npm run kill; export CSP_ALLOWED_HOSTS='http: https: data: filesystem: about: blob: ws: wss:'; KUI_HEADLESS_WEBPACK=true kui-watch-webpack $WATCH_ARGS",
+    "watch:browser": "npm run kill; kui-watch-webpack $WATCH_ARGS",
     "watch:test": "RUNNING_KUI_TEST=true npm run watch:browser",
     "watch": "concurrently -n WEBPACK,TYPESCRIPT --kill-others 'npm run watch:browser' 'npm run watch:source'",
     "format": "prettier --write '**/*.{scss,css,html,js,json,md,ts,tsx}'",
