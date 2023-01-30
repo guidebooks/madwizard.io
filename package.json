@@ -1,6 +1,6 @@
 {
   "name": "madwizard.io web site",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "description": "This project uses Kui to create a static single page web application.",
   "scripts": {
     "watch:source": "tsc --build tsconfig.json --watch",
@@ -61,9 +61,9 @@
     "printWidth": 120
   },
   "devDependencies": {
-    "@kui-shell/builder": "13.0.0-dev-20230129-204815",
-    "@kui-shell/react": "13.0.0-dev-20230129-204815",
-    "@kui-shell/webpack": "13.0.0-dev-20230129-204815",
+    "@kui-shell/builder": "13.0.0-dev-20230129-212326",
+    "@kui-shell/react": "13.0.0-dev-20230129-212326",
+    "@kui-shell/webpack": "13.0.0-dev-20230129-212326",
     "@playwright/test": "^1.29.2",
     "@types/react": "^18.0.26",
     "@types/react-dom": "^18.0.10",
@@ -78,12 +78,12 @@
   },
   "dependencies": {
     "@kui-shell/client": "file:./plugins/plugin-client-offline",
-    "@kui-shell/core": "13.0.0-dev-20230129-204815",
-    "@kui-shell/plugin-bash-like": "13.0.0-dev-20230129-204815",
-    "@kui-shell/plugin-carbon-themes": "13.0.0-dev-20230129-204815",
-    "@kui-shell/plugin-client-common": "13.0.0-dev-20230129-204815",
-    "@kui-shell/plugin-core-support": "13.0.0-dev-20230129-204815",
-    "@kui-shell/plugin-madwizard": "13.0.0-dev-20230129-204815",
-    "@kui-shell/plugin-patternfly4-themes": "13.0.0-dev-20230129-204815"
+    "@kui-shell/core": "13.0.0-dev-20230129-212326",
+    "@kui-shell/plugin-bash-like": "13.0.0-dev-20230129-212326",
+    "@kui-shell/plugin-carbon-themes": "13.0.0-dev-20230129-212326",
+    "@kui-shell/plugin-client-common": "13.0.0-dev-20230129-212326",
+    "@kui-shell/plugin-core-support": "13.0.0-dev-20230129-212326",
+    "@kui-shell/plugin-madwizard": "13.0.0-dev-20230129-212326",
+    "@kui-shell/plugin-patternfly4-themes": "13.0.0-dev-20230129-212326"
   }
 }
