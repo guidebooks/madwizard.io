@@ -6,9 +6,9 @@
     "watch:source": "tsc --build tsconfig.json --watch",
     "compile": "npx tsc --build . && npx kui-babel && npx kui-prescan",
     "compile:clean": "tsc --build tsconfig.json --clean",
-    "build": "kui-build-webpack",
+    "build": "npm run compile && kui-build-webpack",
     "kill": "kill $(lsof -t -i:908${PORT_OFFSET-0}) > /dev/null 2> /dev/null || true",
-    "watch:browser": "npm run kill; kui-watch-webpack $WATCH_ARGS",
+    "watch:browser": "npm run kill; npx kui-prescan && kui-watch-webpack $WATCH_ARGS",
     "watch:test": "RUNNING_KUI_TEST=true npm run watch:browser",
     "watch": "concurrently -n WEBPACK,TYPESCRIPT --kill-others 'npm run watch:browser' 'npm run watch:source'",
     "format": "prettier --write '**/*.{scss,css,html,js,json,md,ts,tsx}'",
@@ -61,29 +61,29 @@
     "printWidth": 120
   },
   "devDependencies": {
-    "@kui-shell/builder": "13.0.0-dev-20230130-111020",
-    "@kui-shell/react": "13.0.0-dev-20230130-111020",
-    "@kui-shell/webpack": "13.0.0-dev-20230130-111020",
+    "@kui-shell/builder": "13.1.0",
+    "@kui-shell/react": "13.1.0",
+    "@kui-shell/webpack": "13.1.0",
     "@playwright/test": "^1.30.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
-    "@typescript-eslint/eslint-plugin": "^5.49.0",
-    "@typescript-eslint/parser": "^5.49.0",
+    "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "@typescript-eslint/parser": "^5.50.0",
     "eslint": "^8.33.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.1.0",
     "prettier": "^2.8.3",
     "concurrently": "^7.6.0",
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   },
   "dependencies": {
     "@kui-shell/client": "file:./plugins/plugin-client-offline",
-    "@kui-shell/core": "13.0.0-dev-20230130-111020",
-    "@kui-shell/plugin-bash-like": "13.0.0-dev-20230130-111020",
-    "@kui-shell/plugin-carbon-themes": "13.0.0-dev-20230130-111020",
-    "@kui-shell/plugin-client-common": "13.0.0-dev-20230130-111020",
-    "@kui-shell/plugin-core-support": "13.0.0-dev-20230130-111020",
-    "@kui-shell/plugin-madwizard": "13.0.0-dev-20230130-111020",
-    "@kui-shell/plugin-patternfly4-themes": "13.0.0-dev-20230130-111020"
+    "@kui-shell/core": "13.1.0",
+    "@kui-shell/plugin-bash-like": "13.1.0",
+    "@kui-shell/plugin-carbon-themes": "13.1.0",
+    "@kui-shell/plugin-client-common": "13.1.0",
+    "@kui-shell/plugin-core-support": "13.1.0",
+    "@kui-shell/plugin-madwizard": "13.1.0",
+    "@kui-shell/plugin-patternfly4-themes": "13.1.0"
   }
 }
