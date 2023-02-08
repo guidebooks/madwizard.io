@@ -8,6 +8,12 @@
         { "notebook": "Craft a Wizard", "filepath": "/kui/client/playground.md" },
         { "notebook": "Explore Markdown Features", "filepath": "/kui/playground.md" }
       ]
+    },
+    {
+      "label": "ML",
+      "submenu": [
+        { "notebook": "Run a Job", "filepath": "/kui/client/ml/job/run.md", "play": "madwizard playground file" }
+      ]
     }
   ]
 }

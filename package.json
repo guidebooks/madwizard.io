@@ -61,29 +61,29 @@
     "printWidth": 120
   },
   "devDependencies": {
-    "@kui-shell/builder": "13.1.0",
-    "@kui-shell/react": "13.1.0",
-    "@kui-shell/webpack": "13.1.0",
+    "@kui-shell/builder": "13.0.0-dev-20230208-151014",
+    "@kui-shell/react": "13.0.0-dev-20230208-151014",
+    "@kui-shell/webpack": "13.0.0-dev-20230208-151014",
     "@playwright/test": "^1.30.0",
     "@types/react": "^18.0.27",
     "@types/react-dom": "^18.0.10",
-    "@typescript-eslint/eslint-plugin": "^5.50.0",
-    "@typescript-eslint/parser": "^5.50.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
     "eslint": "^8.33.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.0",
-    "prettier": "^2.8.3",
+    "lint-staged": "^13.1.1",
+    "prettier": "^2.8.4",
     "concurrently": "^7.6.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
     "@kui-shell/client": "file:./plugins/plugin-client-offline",
-    "@kui-shell/core": "13.1.0",
-    "@kui-shell/plugin-bash-like": "13.1.0",
-    "@kui-shell/plugin-carbon-themes": "13.1.0",
-    "@kui-shell/plugin-client-common": "13.1.0",
-    "@kui-shell/plugin-core-support": "13.1.0",
-    "@kui-shell/plugin-madwizard": "13.1.0",
-    "@kui-shell/plugin-patternfly4-themes": "13.1.0"
+    "@kui-shell/core": "13.0.0-dev-20230208-151014",
+    "@kui-shell/plugin-bash-like": "13.0.0-dev-20230208-151014",
+    "@kui-shell/plugin-carbon-themes": "13.0.0-dev-20230208-151014",
+    "@kui-shell/plugin-client-common": "13.0.0-dev-20230208-151014",
+    "@kui-shell/plugin-core-support": "13.0.0-dev-20230208-151014",
+    "@kui-shell/plugin-madwizard": "13.0.0-dev-20230208-151014",
+    "@kui-shell/plugin-patternfly4-themes": "13.0.0-dev-20230208-151014"
   }
 }
