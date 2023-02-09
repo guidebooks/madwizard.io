@@ -1,6 +1,6 @@
 {
   "name": "madwizard.io web site",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "description": "This project uses Kui to create a static single page web application.",
   "scripts": {
     "watch:source": "concurrently -n TYPESCRIPT,BABEL --kill-others 'tsc --build tsconfig.json --watch' 'WATCH=--watch npx kui-babel'",
